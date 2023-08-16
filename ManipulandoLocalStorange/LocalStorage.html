@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>localStorage</title>    
+    <style>
+        #Conff {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            border: 1px solid black;
+            background: linear-gradient(45deg,rgb(75, 74, 74),rgb(29, 29, 233));
+            text-align: center;
+            display: none;
+        }
+    </style>    
+</head>
+
+<body>
+    <p id="titulo">Exemplo de WebStorage</p>
+    <button onclick="AbrirMenu()">Opções</button>
+    <form name="Conff" id="Conff" action="">
+        <label for="">Nome :</label><br>
+        <input type="text" name="fnome" id="fnome">
+        <br><br>
+        <label>Cor de Fundo:</label><br>
+        <input type="radio" name="FVermelho" onclick="definirCor(1,'#f00')">Vermelho
+        <br>
+        <input type="radio" name="FVermelho" onclick="definirCor(1,'#ff0')">Amarelo
+        <br>
+        <input type="radio" name="FVermelho" onclick="definirCor(1,'#f0f')">Rosa shock 
+        <br>      
+        <br>  
+        <label for="">Cor do texto</label>
+        <br>
+        <input type="radio" name="tamarelo" id="" onclick="definirCor(2,'#000')">Preto
+        <br>
+        <input type="radio" name="tamarelo" id="" onclick="definirCor(2,'#fff')">Branco
+        <br>
+        <input type="radio" name="tamarelo" id="" onclick="definirCor(2,'#ff0')">Amarelo
+        <br>
+        <br>
+        <button onclick="Gravar()">Gravar</button>
+    </form>
+
+</body>
+<script src="./LocalStorage.js"></script>
+
+</html>
