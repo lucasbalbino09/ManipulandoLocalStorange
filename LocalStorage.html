@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localStorage</title>
+</head>
+
+<body>
+    <p>Exemplo de WebStorage</p>
+    <form name="dados" action="">
+        <label for="">Nome :</label><br>
+        <input type="text" name="fnome" id="fnome">
+        <br><br>
+        <label>Cor de Fundo:</label><br>
+        <input type="radio" name="FVermelho" onclick="definirCor(1,'#f00')">Vermelho
+        <br>
+        <input type="radio" name="FVermelho" onclick="definirCor(1,'#ff0')">Amarelo
+        <br>
+        <input type="radio" name="FVermelho" onclick="definirCor(1,'#f0f')">Rosa shock 
+        <br>      
+        <br>  
+        <label for="">Cor do texto</label>
+        <br>
+        <input type="radio" name="tamarelo" id="" onclick="definirCor(2,'#000')">Preto
+        <br>
+        <input type="radio" name="tamarelo" id="" onclick="definirCor(2,'#fff')">Branco
+        <br>
+        <input type="radio" name="tamarelo" id="" onclick="definirCor(2,'#ff0')">Amarelo
+        <br>
+        <br>
+        <button onclick="Gravar()">Gravar</button>
+    </form>
+
+</body>
+<script src="./LocalStorage.js"></script>
+
+</html>
